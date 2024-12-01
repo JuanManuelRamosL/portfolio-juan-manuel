@@ -1,0 +1,45 @@
+.button-download-cv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70px;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #000;
+    /* Fondo negro */
+    color: #fff;
+    /* Texto blanco */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-size: 1rem;
+    /* Tamaño de fuente */
+    font-weight: 600;
+    /* Fuente seminegrita */
+    border: 2px solid transparent;
+    /* Sin borde visible */
+    border-radius: 32px;
+    /* Bordes redondeados */
+    transition: all 0.3s ease;
+    margin-right: 20px;
+    transform: translateY(6px);
+    margin-bottom: 14px;
+}
+
+.button-download-cv:hover {
+    background-color: #333;
+    /* Fondo gris oscuro al pasar el ratón */
+    color: #f0f0f0;
+    /* Color de texto ligeramente más claro */
+    border-color: #fff;
+    /* Borde blanco al pasar el ratón */
+}
+
+.button-download-cv:active {
+    transform: scale(0.98);
+    /* Efecto de clic */
+}
+
+.icon-download {
+    fill: currentColor;
+    /* Hace que el ícono tome el color del texto */
+}

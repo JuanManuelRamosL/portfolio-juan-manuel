@@ -1,0 +1,112 @@
+/* Estilos generales del navbar */
+.navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(15, 23, 42, 0.9);
+    /* Similar a bg-slate-950 */
+    backdrop-filter: blur(8px);
+    color: white;
+    z-index: 50;
+    padding: 1rem 0;
+    top: 0;
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+/* Logo */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #3b82f6, #2563eb);
+    /* Blue gradient */
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* Tema */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(100, 116, 139, 0.5);
+    /* Similar a hover:bg-slate-800 */
+}
+
+/* Botón hamburguesa */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 0.3rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.hamburger-menu .line {
+    width: 1.5rem;
+    height: 0.2rem;
+    background: white;
+    border-radius: 2px;
+}
+
+/* Menú */
+.menu {
+    display: flex;
+    gap: 2rem;
+    transition: all 0.3s ease;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu-item:hover {
+    color: #3b82f6;
+    /* Azul similar a hover:text-blue-500 */
+}
+
+/* Responsividad */
+@media screen and (max-width: 768px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: row;
+        position: absolute;
+        width: 100%;
+        top: 4rem;
+        right: 1rem;
+        background: rgba(15, 23, 42, 0.9);
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transform: translateX(20px);
+    }
+
+
+
+    .menu.menu-open {
+        display: flex;
+    }
+
+    .menu-item {
+        margin: 0.5rem 0;
+    }
+}

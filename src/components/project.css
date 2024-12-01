@@ -1,0 +1,36 @@
+.swiper-button-prev,
+.swiper-button-next {
+    color: #000;
+    /* Cambia el color si es necesario */
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Fondo blanco semitransparente */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    transform: scale(1.2);
+    /* Efecto de agrandamiento al pasar el mouse */
+}
+
+.swiper-button-prev {
+    left: -50px;
+    /* Ajusta el valor para separarlo más del carrusel */
+}
+
+.swiper-button-next {
+    right: -50px;
+    /* Ajusta el valor para separarlo más del carrusel */
+}
+
+.custom-swiper .swiper-button-prev {
+    left: -50px;
+}
+
+.custom-swiper .swiper-button-next {
+    right: -50px;
+}
