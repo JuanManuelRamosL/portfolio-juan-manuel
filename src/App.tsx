@@ -7,6 +7,7 @@ import { Contact } from './components/Contact';
 import { Team } from './components/team';
 import { Experience } from './components/experiencia';
 import { EducationAndCertifications } from './components/Estudios';
+import AboutContact from './components/about';
 
 function App() {
   return (
@@ -17,8 +18,10 @@ function App() {
       <Skills />
      {/*  <Experience></Experience> */}
       <EducationAndCertifications></EducationAndCertifications>
-      {/* <Team></Team> */}
+     {/* <Team></Team>  */}
+     <AboutContact></AboutContact>
       <Contact />
+     
     </div>
   );
 }

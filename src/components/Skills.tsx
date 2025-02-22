@@ -92,6 +92,7 @@ const skills = [
       { name: 'WhatsApp Bot', icon: <FaRobot className="text-teal-400" /> },
       { name: 'Make.com', icon: <FaRobot className="text-orange-400" /> },
       { name: 'Flowise', icon: <FaRobot className="text-pink-500" /> },
+      { name: 'n8n', icon: <FaRobot className="text-white" /> },
     ],
   },
   {
@@ -106,33 +107,40 @@ const skills = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-20 bg-slate-800 dark:bg-slate-900">
-      <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-white mb-12">Tecnologías</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {skills.map((skillGroup, index) => (
-            <div
-              key={index}
-              className="bg-slate-700 dark:bg-slate-800 p-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-2 hover:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-500"
-            >
-              <h3 className="text-xl font-bold text-blue-400 mb-4">
-                {skillGroup.category}
-              </h3>
-              <ul className="space-y-2">
-                {skillGroup.items.map((skill, i) => (
-                  <li
-                    key={i}
-                    className="text-gray-300 flex items-center gap-2"
-                  >
-                    {skill.icon}
-                    {skill.name}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+<section
+  id="skills"
+  className="py-20 bg-gradient-to-br from-white via-blue-50 to-blue-100 dark:from-slate-950 dark:via-slate-900 dark:to-blue-950 transition-colors duration-300"
+>
+  <div className="container mx-auto px-4">
+    <h2 className="text-4xl font-bold text-center text-blue-600 dark:text-white mb-12">
+      Tecnologías
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {skills.map((skillGroup, index) => (
+        <div
+          key={index}
+          className="bg-white dark:bg-slate-800 p-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:border-2 hover:border-blue-500 focus:outline-none focus:ring-4 focus:ring-blue-500"
+        >
+          <h3 className="text-xl font-bold text-blue-600 dark:text-blue-400 mb-4">
+            {skillGroup.category}
+          </h3>
+          <ul className="space-y-2">
+            {skillGroup.items.map((skill, i) => (
+              <li
+                key={i}
+                className="text-gray-700 dark:text-gray-300 flex items-center gap-2"
+              >
+                {skill.icon}
+                {skill.name}
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
-    </section>
+      ))}
+    </div>
+  </div>
+</section>
+
+  
   );
 }

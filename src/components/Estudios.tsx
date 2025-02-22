@@ -17,7 +17,7 @@ export function EducationAndCertifications() {
 
             {/* Estudio 3 */}
             <div className="bg-gray-700 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-              <img src="https://media.licdn.com/dms/image/v2/D4D2DAQHT7tRbMaJleQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1733026097005?e=1733634000&v=beta&t=HJAQemZ1LcVWaECRBohX_bZhShk-Ls35R7a16pHcCzI" alt="Estudio 3" className="w-full h-40 object-cover rounded-t-lg" />
+              <img src="/image.png" alt="Estudio 3" className="w-full h-40 object-cover rounded-t-lg" />
               <h4 className="text-xl font-semibold text-white mt-4">Bootcamp en Programación Full Stack</h4>
               <p className="text-gray-300">Henry | 2023</p>
             </div>
