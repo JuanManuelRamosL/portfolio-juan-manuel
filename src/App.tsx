@@ -8,12 +8,14 @@ import { Team } from "./components/team";
 import { Experience } from "./components/experiencia";
 import { EducationAndCertifications } from "./components/Estudios";
 import AboutContact from "./components/about";
+import { Timeline } from "./components/timeline";
 
 function App() {
   return (
     <div className="min-h-screen bg-white dark:bg-slate-950 transition-colors duration-300">
       <Navbar />
       <Hero />
+      <Timeline></Timeline>
       <Projects />
       <Skills />
       {/*  <Experience></Experience> */}

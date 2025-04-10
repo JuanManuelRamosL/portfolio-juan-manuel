@@ -36,7 +36,7 @@ const projects = [
     ],
     image: "/bumi2.png",
     github: "https://github.com/HMusicProyect/henry-music",
-    live: "#proyectos",
+    live: "https://bummiai.com/",
   },
   {
     title: "CodeForge",
@@ -96,6 +96,23 @@ const projects = [
     live: "https://matungo.netlify.app/", // Reemplazar con el enlace al proyecto live si aplica
   },
   {
+    title: "EvexIA",
+    description:
+      "Desarrollada con React Native para una experiencia móvil multiplataforma (iOS y Android).El Backend Potenciado por Python y FastAPI, garantizando un rendimiento rápido y escalable.Modelos de IA: Integración de múltiples modelos de inteligencia artificial a través de OpenRouter, ofreciendo flexibilidad y acceso a los mejores modelos disponibles en el mercado.",
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "CSS",
+      "Python",
+      "fastAPI",
+      "PostgreSQL",
+    ],
+    image: "/evexia.png",
+    github: "https://github.com/JuanManuelRamosL/chatbot-voz",
+    live: "https://evexiaone.netlify.app/",
+    live2: "https://expo.dev/artifacts/eas/fgssHZz3tBZvgtK8NmrsoQ.apk",
+  },
+  {
     title: "Galería de Imágenes",
     description:
       "Diseñada para que los usuarios puedan explorar fotos. Utiliza tecnologías modernas para proporcionar una experiencia interactiva y receptiva.",
@@ -113,7 +130,15 @@ const projects = [
     github: null,
     live: "https://beauty-studio-d-art.netlify.app/",
   },
-
+  {
+    title: "TechJE",
+    description:
+      "es nuestra empresa de desarrollo de soluciones tecnológicas innovadoras, especializada en inteligencia artificial (IA) y servicios de streaming. Nos dedicamos a crear software de vanguardia que potencia la productividad, mejora la experiencia del usuario y optimiza procesos para empresas de todos los tamaños. Con un equipo de expertos en IA, nos enfocamos en diseñar soluciones personalizadas que resuelvan problemas complejos, mientras que nuestros servicios de streaming aseguran una transmisión de contenido fluida y de alta calidad, adaptada a las necesidades de cada cliente.transformamos ideas en realidades tecnológicas que impulsan el futuro digital.",
+    technologies: ["JavaScript", "React", "CSS"],
+    image: "/empresa.png",
+    github: null,
+    live: "https://empresadesarrollo.netlify.app/",
+  },
   {
     title: "H Music",
     description:
